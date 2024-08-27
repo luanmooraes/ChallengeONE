@@ -45,7 +45,7 @@ Não é necessário instalar nenhuma dependência para rodar este projeto. Basta
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/decodificador-texto.git
+   git clone git@github.com:luanmooraes/ChallengeONE.git
    ```
 
 2. Navegue até o diretório do projeto:

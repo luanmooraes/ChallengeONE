@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Decodificador de Texto</h1>
+        </header>
+
+        <main class="main-content">
+            <section class="card">
+                <h2 class="card__title">Criptografar Texto</h2>
+                <textarea id="textoParaCriptografar" class="card__textarea"
+                    placeholder="Digite seu texto"></textarea>
+                <button class="card__button" onclick="criptografarTexto()">Criptografar</button>
+            </section>
+
+            <section class="card">
+                <h2 class="card__title">Descriptografar Texto</h2>
+                <textarea id="textoParaDescriptografar" class="card__textarea"
+                    placeholder="Digite seu texto criptografado"></textarea>
+                <button class="card__button" onclick="descriptografarTexto()">Descriptografar</button>
+            </section>
+
+            <section class="card">
+                <h2 class="card__title">Texto Criptografado</h2>
+                <textarea id="textoCriptografado" class="card__textarea"
+                    placeholder="Texto criptografado será mostrado aqui" readonly></textarea>
+                <button class="card__button card__button--copy" onclick="copiarTexto()">Copiar</button>
+            </section>
+
+            <section class="result">
+                <h2 class="result__title">Resultado</h2>
+                <p id="resultadoTexto" class="result__text"></p>
+                <p id="mensagemErro" class="result__error"></p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Decodificador de Texto</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
